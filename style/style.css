@@ -1,0 +1,187 @@
+/* Beginning CSS Reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+    border: 0;
+    box-sizing: border-box;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Beginning CSS */
+
+body {
+    background: rgb(49, 49, 49);
+    background-image: linear-gradient(to right, rgb(192, 30, 2), rgb(175, 81, 4));
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    font-size: 38px;
+    text-align: center;
+    margin: 20px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+div#calculator {
+    border: 2px solid black;
+    border-radius: 6px;
+    box-shadow: 3px 4px 8px;
+    width: 340px;
+    height: 500px;
+    min-width: 340px;
+    min-height: 500px;
+    margin: 50px auto;
+    margin-bottom: 30px;
+    background: rgb(3, 1, 100);
+    text-align: center;
+}
+
+div#calcLog {
+    border-radius: 8px;
+    width: 540px;
+    height: auto;
+    margin: 0 auto;
+    color: rgba(255, 255, 255, 0.5);
+    padding-left: 20px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    visibility: hidden;
+}
+
+div#calcLog ol {
+    margin: 10px auto;
+    padding: 5px;
+    font-size: 17px;
+}
+
+div#calculator div.display {
+    border: 1px solid black;
+    border-radius: 10px;
+    background: black;
+    color: green;
+    width: 95%;
+    height: 8%;
+    font-size: 22px;
+    padding: 10px;
+    margin: 10px auto;
+    overflow: hidden;
+    text-align: left;
+}
+
+div#calculator input.input {
+    width: 90%;
+    height: 40px;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 15px auto;
+    border: 1px solid grey;
+    display: block;
+    text-align: center;
+    border-radius: 22px;
+}
+
+div#calculator div.keypad {
+    height: 300px;
+    width: 90%;
+    margin: 20px auto;
+    display: grid;
+    grid-gap: 2px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    border-radius: 5px;
+}
+
+div#calculator a.helpme {
+    font-size: 17px;
+    color: whitesmoke;
+    margin: 0 auto;
+    text-decoration: none;
+}
+
+div#calculator a.helpme:hover {
+    text-decoration: underline;
+    font-size: 19px;
+}
+
+div.keypad button {
+    border: 1px solid rgba(0, 0, 0, 0.616);
+    border-radius: 7px;
+    font-size: 18px;
+    max-width: 74px;
+}
+
+div.keypad button.pressed {
+    background: rgba(3, 230, 238, 0.45);
+    font-size: 20px;
+    transition: all 0.3s ease;
+}
+
+div.keypad button:hover {
+    font-size: 20px;
+    transition: all 0.2s ease;
+}
+
+div.keypad button:active {
+    background: rgba(3, 230, 238, 0.45);
+}
+
+div.keypad button.upper {
+    margin-bottom: 6px;
+    font-size: 14px;
+}
+
+div.keypad button.upper:hover {
+    font-size: 15px;
+    transition: all 0.2s ease;
+}
+
+button.clearLog {
+    height: 24px;
+    width: 90px;
+    margin: 10px auto;
+    display: block;
+    border-radius: 6px;
+    box-shadow: 1px 1px 2px;
+}

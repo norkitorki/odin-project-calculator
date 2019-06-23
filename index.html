@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Calculator</title>
+        <link href="./style/style.css" type="text/css" rel="stylesheet">
+    </head>
+    <body>
+        <h1>Odin-Project: Calculator</h1>
+        <div id="calculator">
+            <div class="display">0</div>
+            <input type="input" class="input" maxlength="28" placeholder="0"></input>
+            <div class="keypad">
+                <!--The following are the calculator controls...-->
+                <button class="upper select">Select</button><button class="upper previous">Previous</button>
+                <button class="upper next">Next</button><button class="upper reset">RESET</button>
+                <button class="pow">pow</button><button class="sqrt">sqrt</button><button class="backspace"><=</button><button class="division operator">/</button>
+                <button>7</button><button>8</button><button>9</button><button class="multiplication operator">x</button>
+                <button>4</button><button>5</button><button>6</button><button class="subtraction operator">-</button>
+                <button>1</button><button>2</button><button>3</button><button class="addition operator">+</button>
+                <button class="result">Result</button><button>0</button><button class="decimal">.</button><button class="evaluation">=</button>
+                <!--End of the calculator controls-->
+            </div>
+            <a class="helpme" href="./help.txt" target="_blank">Help</a>
+        </div>
+        <div id="calcLog">
+            <button class="clearLog">Clear Log</button>
+            <ol>
+            </ol>
+        </div>
+
+        <script src="./script/script.js"></script>
+    </body>
+</html>
